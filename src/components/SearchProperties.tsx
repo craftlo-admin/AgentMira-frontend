@@ -68,7 +68,7 @@ const SearchProperties: React.FC = () => {
       setLoading(true);
       setError(null);
       
-      const response = await fetch('http://127.0.0.1:8000/findproperties', {
+      const response = await fetch('https://agentmira-backend.onrender.com/findproperties', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(searchRequest)

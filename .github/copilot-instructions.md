@@ -4,7 +4,7 @@
 This is a React TypeScript dashboard application with:
 - Left sidebar navigation
 - Two prediction pages that fetch data from API endpoints
-- POST requests to http://127.0.0.1:8000/predict and http://127.0.0.1:8000/predict2
+- POST requests to https://agentmira-backend.onrender.com/predict and https://agentmira-backend.onrender.com/predict2
 - Dynamic data display in tables
 - Error handling and loading states
 

@@ -51,7 +51,7 @@ const Properties: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch('http://127.0.0.1:8000/properties', {
+      const response = await fetch('https://agentmira-backend.onrender.com/properties', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -81,7 +81,7 @@ const Properties: React.FC = () => {
   const fetchPropertyDetails = async (propertyId: number) => {
     try {
       setDetailsLoading(true);
-      const response = await fetch(`http://127.0.0.1:8000/properties/${propertyId}`);
+      const response = await fetch(`https://agentmira-backend.onrender.com/properties/${propertyId}`);
       
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       
